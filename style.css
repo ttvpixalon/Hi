@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Game Container */
+#game-container {
+    width: 90%;
+    height: 80%;
+    background: #444;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Card Stack */
+.card-stack {
+    width: 120px;
+    height: 180px;
+    border-radius: 10px;
+    background: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Player Area */
+#players {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-area {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 25%;
+    text-align: center;
+}
+
+.hand {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+    width: 60px;
+    height: 90px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 90px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+.red {
+    background: linear-gradient(135deg, #ff4e50, #d41e1e);
+}
+
+.blue {
+    background: linear-gradient(135deg, #4286f4, #0054d4);
+}
+
+.green {
+    background: linear-gradient(135deg, #3adb76, #1c873a);
+}
+
+.yellow {
+    background: linear-gradient(135deg, #ffe047, #d4a100);
+}
+
+.black {
+    background: linear-gradient(135deg, #444, #000);
+}
+
+/* Controls */
+#controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-button {
+    padding: 10px 20px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-button:hover {
+    background-color: #888;
+    transform: scale(1.05);
+}

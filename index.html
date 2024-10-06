@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uno Game</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="draw-pile" class="card-stack">Draw Pile</div>
+        <div id="discard-pile" class="card-stack">Discard Pile</div>
+        <div id="players">
+            <div id="player-1" class="player-area">
+                <h3>Player 1</h3>
+                <div class="hand" id="hand-player-1"></div>
+            </div>
+            <div id="player-2" class="player-area">
+                <h3>Player 2</h3>
+                <div class="hand" id="hand-player-2"></div>
+            </div>
+            <!-- Add more players if necessary -->
+        </div>
+    </div>
+    <div id="controls">
+        <button id="draw-card" class="game-button">Draw Card</button>
+        <button id="end-turn" class="game-button">End Turn</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
